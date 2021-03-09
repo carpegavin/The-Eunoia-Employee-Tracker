@@ -1,36 +1,31 @@
+/* eslint-disable no-undef */
 import React, { Component } from "react";
 import EmployeeCard from "./components/EmployeeCard";
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
+import Wrapper from "./components/Container";
+
+
+// import { BrowserRouter as Router, Route } from "react-router-dom";
+// import Header from "./components/Header";
+// import Search from "./pages/search";
+
+// import Title from "./components/Title";
 import employees from "./employees.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  
   state = {
-    employees
+    employees: employees.results
   };
 
-  removeEmployee = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const employees = this.state.employees.filter(employee => employee.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ employees });
-  };
-
-  // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
-        <Title>Employee List</Title>
         {this.state.employees.map(employee => (
           <EmployeeCard
-            removeEmployee={this.removeEmployee}
-            id={employee.id}
-            key={employee.id}
-            name={employee.name}
-            image={employee.image}
+            name={`${employee.name.first} ${employee.name.last}`}
             phone={employee.phone}
-            role={employee.role}
+            email={employee.email}
+            picture={employee.picture.thumbnail}
           />
         ))}
       </Wrapper>
@@ -39,3 +34,23 @@ class App extends Component {
 }
 
 export default App;
+
+
+// function App() {
+//   return (
+//     <Router>
+//       <div>
+//         <Header />
+//         <Wrapper>
+//           <Route exact path="/" component={About} />
+//           <Route exact path="/about" component={About} />
+//           <Route exact path="/discover" component={Discover} />
+//           <Route exact path="/search" component={Search} />
+//         </Wrapper>
+        
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;

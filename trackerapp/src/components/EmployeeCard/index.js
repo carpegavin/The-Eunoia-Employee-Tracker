@@ -3,9 +3,9 @@ import "./style.css";
 
 function EmployeeCard(props) {
   return (
-    <div className="card">
+    <div className="column">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img alt={props.name} src={props.picture} />
       </div>
       <div className="content">
         <ul>
@@ -16,7 +16,10 @@ function EmployeeCard(props) {
             <strong>Phone:</strong> {props.phone}
           </li>
           <li>
-            <strong>Role:</strong> {props.role}
+            <strong>Email:</strong> {props.email}
+          </li>
+          <li>
+            <strong>Picture:</strong> {props.picture}
           </li>
         </ul>
       </div>

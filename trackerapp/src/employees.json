@@ -1,72 +1,178 @@
-[
-  {
-    "id": 1,
-    "name": "Susan Dellsworth",
-    "image": "https://images.generated.photos/8oEq7iR6ujYzXklvft8uOZr1ZSwn7f4cKqwQPwy_9_I/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAzNTc5OTguanBn.jpg",
-    "phone": "512-333-2443",
-    "role": "Little Kitty Undertaker"
-  },
-  {
-    "id": 2,
-    "name": "Mike Mikey",
-    "image": "https://images.generated.photos/EMNwvOD0-VLMdgI4X0lQveOH0IH4DWG2RsM6-LpIz60/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA4NDk3MjcuanBn.jpg",
-    "phone": "512-454-3434",
-    "role": "Pen Cap Scrubber"
-  },
-  {
-    "id": 3,
-    "name": "Jimmy Penderton",
-    "image": "https://images.generated.photos/hKePEH2rv71dvrDFRiVUPOOBt_bosw9QP_cDn6pSQgk/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA2MDUzNDAuanBn.jpg",
-    "phone": "512-375-3858",
-    "role": "Deep-water Vet Web Tech"
-  },
-  {
-    "id": 4,
-    "name": "Karen Schlessinger",
-    "image": "https://images.generated.photos/ynraaJJXP0PaRe0ZhM7H_B5z1n_iMfrlHPkq92sovHs/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA5OTUxNzguanBn.jpg",
-    "phone": "512-393-9796",
-    "role": "Office Breakroom Overlord"
-  },
-  {
-    "id": 5,
-    "name": "Carol Katter",
-    "image": "https://images.generated.photos/G5TlQ3I_AvBtLIm8FZRJx5tBsuMB4i6_xxQW5AKmQmY/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAzNTI1NDUuanBn.jpg",
-    "phone": "512-449-2859",
-    "role": "Bald Eagle Nail Trimmer"
-  },
-  {
-    "id": 6,
-    "name": "Doug Mastervolm",
-    "image": "https://images.generated.photos/-xQMaCNRdbvK2b0_R3BKiubpGRDMum3bTDy7zQ914Eg/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA2Njc5MTguanBn.jpg",
-    "phone": "512-776-9372",
-    "role": "Star Trek Shampoo Consultant"
-  },
-  {
-    "id": 7,
-    "name": "Barb Clinet",
-    "image": "https://images.generated.photos/DEinUMVSJ2RYOPnbDGw4fEn1ImaEMzEpNzKNICBU9r4/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAwNTc5MzIuanBn.jpg",
-    "phone": "512-916-4926",
-    "role": "Pinky Toe Ice Cream Shaver"
-  },
-  {
-    "id": 8,
-    "name": "Chad Qwepperson",
-    "image": "https://images.generated.photos/ffpz0QgVNTPiNtM_AXdY-Zr2UaQ3wVy6hKeOcqz--Y4/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA1NDY5NjkuanBn.jpg",
-    "phone": "512-443-8422",
-    "role": "Low-Fi Chill Beats Curator"
-  },
-  {
-    "id": 9,
-    "name": "Jennifer Vloogster",
-    "image": "https://images.generated.photos/8J7C3CW0j64vmFyelYFT_BQhIFfvTs_MsfpnEhHseQ4/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA1Nzg3ODYuanBn.jpg",
-    "phone": "512-272-6638",
-    "role": "Beer Coozie Sling-Shot mechanic"
-  },
-  {
-    "id": 10,
-    "name": "Rob Ankles",
-    "image": "https://images.generated.photos/Tmpn56PKQx_aTQ1wM8cptVeWK1T01tR-i7XK3MoGBVk/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA3NjEyNDkuanBn.jpg",
-    "phone": "512-494-2294",
-    "role": "President of the Earlobe Repatriation Club"
-  }
-]
+{
+    "results": [
+    {
+    "gender": "female",
+    "name": {
+    "title": "Mrs",
+    "first": "Loretta",
+    "last": "Lee"
+    },
+    "location": {
+    "street": {
+    "number": 6159,
+    "name": "Elgin St"
+    },
+    "city": "Boulder",
+    "state": "Alaska",
+    "country": "United States",
+    "postcode": 54479,
+    "coordinates": {
+    "latitude": "-53.4341",
+    "longitude": "1.3889"
+    },
+    "timezone": {
+    "offset": "+10:00",
+    "description": "Eastern Australia, Guam, Vladivostok"
+    }
+    },
+    "email": "loretta.lee@example.com",
+    "login": {
+    "uuid": "989f9410-7d7f-42f5-a938-eb712f411e1b",
+    "username": "lazytiger765",
+    "password": "cheech",
+    "salt": "ZC0i0u6K",
+    "md5": "fa7ccaa2d11d818f06cdfd841d687aa9",
+    "sha1": "c89d56a92b1542c2d72bcc81123ffe821808f616",
+    "sha256": "e84c5a40706659087c94b6b1452320bc75d90479f9658ffc2e8829aff37d379f"
+    },
+    "dob": {
+    "date": "1968-06-13T17:13:45.679Z",
+    "age": 53
+    },
+    "registered": {
+    "date": "2004-05-20T00:13:44.022Z",
+    "age": 17
+    },
+    "phone": "(920)-080-7634",
+    "cell": "(821)-172-5245",
+    "id": {
+    "name": "SSN",
+    "value": "212-90-7911"
+    },
+    "picture": {
+    "large": "https://randomuser.me/api/portraits/women/13.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/women/13.jpg",
+    "thumbnail": "https://randomuser.me/api/portraits/thumb/women/13.jpg"
+    },
+    "nat": "US"
+    },
+    {
+    "gender": "male",
+    "name": {
+    "title": "Mr",
+    "first": "Stephen",
+    "last": "Ray"
+    },
+    "location": {
+    "street": {
+    "number": 4620,
+    "name": "Spring St"
+    },
+    "city": "Tampa",
+    "state": "Idaho",
+    "country": "United States",
+    "postcode": 33384,
+    "coordinates": {
+    "latitude": "28.6774",
+    "longitude": "-55.7006"
+    },
+    "timezone": {
+    "offset": "-5:00",
+    "description": "Eastern Time (US & Canada), Bogota, Lima"
+    }
+    },
+    "email": "stephen.ray@example.com",
+    "login": {
+    "uuid": "7d422b49-3694-424f-8be3-286eb37ce345",
+    "username": "whitebutterfly397",
+    "password": "cang",
+    "salt": "unkfvKeA",
+    "md5": "3a1ee031247cd44f88f637c4bed7ff69",
+    "sha1": "b59b093d2e36242d883444ecfa863136c7e89d65",
+    "sha256": "e5556b98acb5bbdab77b87ee14d6ed6bac8f02507bcfc510c72f1727b4873683"
+    },
+    "dob": {
+    "date": "1997-01-10T22:19:17.054Z",
+    "age": 24
+    },
+    "registered": {
+    "date": "2003-10-01T02:43:33.001Z",
+    "age": 18
+    },
+    "phone": "(724)-186-7371",
+    "cell": "(041)-399-7705",
+    "id": {
+    "name": "SSN",
+    "value": "673-85-8519"
+    },
+    "picture": {
+    "large": "https://randomuser.me/api/portraits/men/19.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/19.jpg",
+    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/19.jpg"
+    },
+    "nat": "US"
+    },
+    {
+    "gender": "male",
+    "name": {
+    "title": "Mr",
+    "first": "Salvador",
+    "last": "Weaver"
+    },
+    "location": {
+    "street": {
+    "number": 3912,
+    "name": "Robinson Rd"
+    },
+    "city": "Rancho Cucamonga",
+    "state": "West Virginia",
+    "country": "United States",
+    "postcode": 88154,
+    "coordinates": {
+    "latitude": "-49.9175",
+    "longitude": "-117.8961"
+    },
+    "timezone": {
+    "offset": "+6:00",
+    "description": "Almaty, Dhaka, Colombo"
+    }
+    },
+    "email": "salvador.weaver@example.com",
+    "login": {
+    "uuid": "159163f1-5f13-4b37-ad9b-6c11714ffcb1",
+    "username": "tinypanda684",
+    "password": "trauma",
+    "salt": "r0dxtWoJ",
+    "md5": "96818b5ad00dcc51da0b74492160a3a9",
+    "sha1": "9ab6210bc63693c305680d33ad3c6d6562e3bcd1",
+    "sha256": "89cb7e3cd186611c0677fcf7007bbeb7745f86e0bc6098fe247957f7a6d3cd4e"
+    },
+    "dob": {
+    "date": "1963-09-16T06:11:16.851Z",
+    "age": 58
+    },
+    "registered": {
+    "date": "2016-07-05T04:56:28.730Z",
+    "age": 5
+    },
+    "phone": "(050)-589-5945",
+    "cell": "(885)-302-2348",
+    "id": {
+    "name": "SSN",
+    "value": "905-89-0676"
+    },
+    "picture": {
+    "large": "https://randomuser.me/api/portraits/men/1.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/1.jpg",
+    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+    },
+    "nat": "US"
+    }
+    ],
+    "info": {
+    "seed": "0be2692f2b7c1dbc",
+    "results": 3,
+    "page": 1,
+    "version": "1.3"
+    }
+    }

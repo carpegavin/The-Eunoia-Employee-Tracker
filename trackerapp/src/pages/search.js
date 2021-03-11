@@ -1,30 +1,40 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
 
-class Search extends Component {
-  state = {
+//hooks here!!!!________________________
+
+
+function Search () {
+  const [searchState, setSearchState] = useState({
     search: "",
     employees: [],
     results: [],
     error: ""
+  });
+  const [employee, setEmployee] = useState([])
+  const [results, setResults] = useState([])
+ //hook above!______________________________
+  useEffect(() =>{
+    API.getRandomEmployee()
+      .then(res => setEmployee( res.data.results))
+      .then(res => setResults(employee))
+      .catch(err => console.log(err))
+  }, []) 
+
+  const handleInputChange = event => {
+    let searchTerm = event.target.value;
+
+    let filtered = employee.filter(query => query.name.first.includes(searchTerm))
+
+    setResults(filtered);
+    console.log(employee)
   };
 
-  // When the component mounts, get a list of all available base breeds and update this.state.breeds
-  componentDidMount() {
-    API.getEmployeesList()
-      .then(res => this.setState({ employees: res.data.results }))
-      .catch(err => console.log(err));
-  }
-
-  handleInputChange = event => {
-    this.setState({ search: event.target.value });
-  };
-
-  handleFormSubmit = event => {
+const handleFormSubmit = event => {
     event.preventDefault();
     API.getEmployees(this.state.search)
       .then(res => {
@@ -35,27 +45,22 @@ class Search extends Component {
       })
       .catch(err => this.setState({ error: err.message }));
   };
-  render() {
+  
     return (
       <div>
         <Container style={{ minHeight: "80%" }}>
           <h1 className="text-center">Search by Name</h1>
-          <Alert
-            type="danger"
-            style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}
-          >
-            {this.state.error}
-          </Alert>
+          
           <SearchForm
-            handleFormSubmit={this.handleFormSubmit}
-            handleInputChange={this.handleInputChange}
-            employees={this.state.employees}
+            handleFormSubmit={handleFormSubmit}
+            handleInputChange={handleInputChange}
+            employees={searchState.employees}
           />
-          <SearchResults results={this.state.results} />
+          <SearchResults results={results} />
         </Container>
       </div>
     );
   }
-}
 
+  
 export default Search;

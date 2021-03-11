@@ -1,5 +1,5 @@
-// import React from "react";
-// import "./style.css";
+import React from "react";
+import "./style.css";
 
 function SearchForm(props) {
     return (
@@ -17,9 +17,8 @@ function SearchForm(props) {
             id="employee"
           />
           <datalist id="employees">
-            {props.employees.map(employee => (
-              <option value={employee} key={employees} />
-            ))}
+            
+            
           </datalist>
           <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
             Search
@@ -28,5 +27,7 @@ function SearchForm(props) {
       </form>
     );
   }
-
+//   {props.employees.map(employee => (
+//     <option value={employee} key={employee} />
+// ))}
   export default SearchForm;

@@ -1,15 +1,12 @@
-/* eslint-disable no-undef */
+ /* eslint-disable no-undef */
+ import employees from "./employees.json";
 import React, { Component } from "react";
 import EmployeeCard from "./components/EmployeeCard";
 import Wrapper from "./components/Container";
-
-
+import Search from "./pages/search";
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Header from "./components/Header";
-// import Search from "./pages/search";
-
-// import Title from "./components/Title";
-import employees from "./employees.json";
+// import React, { useState, useEffect } from "react";
 
 class App extends Component {
   
@@ -20,14 +17,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        {this.state.employees.map(employee => (
-          <EmployeeCard
-            name={`${employee.name.first} ${employee.name.last}`}
-            phone={employee.phone}
-            email={employee.email}
-            picture={employee.picture.thumbnail}
-          />
-        ))}
+          <Search />
       </Wrapper>
     );
   }
@@ -35,6 +25,16 @@ class App extends Component {
 
 export default App;
 
+// {this.state.employees.map(employee => (
+          
+//   <EmployeeCard
+//     name={`${employee.name.first} ${employee.name.last}`}
+//     phone={employee.phone}
+//     email={employee.email}
+//     picture={employee.picture.medium}
+//   />
+  
+// ))}
 
 // function App() {
 //   return (
@@ -42,12 +42,8 @@ export default App;
 //       <div>
 //         <Header />
 //         <Wrapper>
-//           <Route exact path="/" component={About} />
-//           <Route exact path="/about" component={About} />
-//           <Route exact path="/discover" component={Discover} />
-//           <Route exact path="/search" component={Search} />
+//           <Route exact path="./pages/search" component={Search} />
 //         </Wrapper>
-        
 //       </div>
 //     </Router>
 //   );

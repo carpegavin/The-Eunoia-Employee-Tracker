@@ -18,9 +18,7 @@ function EmployeeCard(props) {
           <li>
             <strong>Email:</strong> {props.email}
           </li>
-          <li>
-            <strong>Picture:</strong> {props.picture}
-          </li>
+          
         </ul>
       </div>
       

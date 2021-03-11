@@ -5,7 +5,7 @@ function SearchForm(props) {
     return (
       <form className="search">
         <div className="form-group">
-          <label htmlFor="employee">Employee Name:</label>
+          <label htmlFor="employee">Employee Search:</label>
           <input
             value={props.search}
             onChange={props.handleInputChange}
@@ -13,7 +13,7 @@ function SearchForm(props) {
             list="employees"
             type="text"
             className="form-control"
-            placeholder="Type in Employee Name"
+            placeholder="Search here"
             id="employee"
           />
           <datalist id="employees">

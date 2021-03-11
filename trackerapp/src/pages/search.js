@@ -3,11 +3,11 @@ import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
-import Alert from "../components/Alert";
+import Header from "../components/Header"
 
 //hooks here!!!!________________________
 
-
+<Header />
 function Search () {
   const [searchState, setSearchState] = useState({
     search: "",
@@ -49,6 +49,7 @@ const handleFormSubmit = event => {
     return (
       <div>
         <Container style={{ minHeight: "80%" }}>
+      
           <h1 className="text-center">Search by Name</h1>
           
           <SearchForm

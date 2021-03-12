@@ -20,6 +20,9 @@ function SearchForm(props) {
             
             
           </datalist>
+
+          
+          
           <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
             Search
           </button>

@@ -2,21 +2,35 @@ import React from "react";
 import "./style.css";
 
 function SearchResults(props) {
+  const { results } = props;
   return (
-    <div classname="column">
-    <ul className="list-group search-results">
-      {props.results ? props.results.map(result => (
-        <li key={result} className="list-group-item">
-          <img alt="Employee" src={result.picture.medium} className="img-fluid" />
-          <p>{result.name.first} {result.name.last}</p>
-          <p>{result.email}</p>
-          <p>{result.cell}</p>
-          <button className="btn btn-info">Ayy</button>
-        </li>
-      )): null}
-    </ul>
-    </div>
+  
+  <table class="table table-striped table-bordered" id="sortTable">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Cell</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      {results.map(result => (
+        <tr key={result}>
+          <td>{result.picture.medium}</td>
+          <td>{result.name.first} {result.name.last}</td>
+          <td>{result.email}</td>
+          <td>{result.cell}</td>
+        </tr>
+    ))}
+    </tbody>
+  </table>
   );
 }
 
+
+
 export default SearchResults;
+
+

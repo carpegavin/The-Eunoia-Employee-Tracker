@@ -3,24 +3,24 @@ import "./style.css";
 
 function EmployeeCard(props) {
   return (
-    <div className="column">
+    <div className="row">
       <div className="img-container">
         <img alt={props.name} src={props.picture} />
       </div>
-      <div className="content">
-        <ul>
-          <li>
+      <table class="container">
+        <tr>
+          <th class="col-sm-4">
             <strong>Name:</strong> {props.name}
-          </li>
-          <li>
+          </th>
+          <th>
             <strong>Phone:</strong> {props.phone}
-          </li>
-          <li>
+          </th>
+          <th>
             <strong>Email:</strong> {props.email}
-          </li>
+          </th>
           
-        </ul>
-      </div>
+        </tr>
+      </table>
       
     </div>
   );

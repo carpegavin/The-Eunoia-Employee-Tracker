@@ -5,8 +5,6 @@ import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Header from "../components/Header"
 
-//hooks here!!!!________________________
-
 <Header />
 function Search () {
   const [searchState, setSearchState] = useState({
@@ -36,7 +34,7 @@ function Search () {
 
 const handleFormSubmit = event => {
     event.preventDefault();
-    API.getEmployees(this.state.search)
+    API.getEmployees(searchState.employees)
       .then(res => {
         if (res.data.status === "error") {
           throw new Error(res.data.message);
@@ -49,15 +47,12 @@ const handleFormSubmit = event => {
     return (
       <div>
         <Container style={{ minHeight: "80%" }}>
-      
-          <h1 className="text-center">Search by Name</h1>
-          
           <SearchForm
             handleFormSubmit={handleFormSubmit}
             handleInputChange={handleInputChange}
             employees={searchState.employees}
           />
-          <SearchResults results={results} />
+          <SearchResults  results={results} />
         </Container>
       </div>
     );

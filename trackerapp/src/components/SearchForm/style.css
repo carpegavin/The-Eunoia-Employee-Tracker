@@ -2,11 +2,16 @@ form.search {
   overflow: auto;
   margin-bottom: 10px;
   width:400px !important;
+  /* display: flex !important;
+  align-content: center !important; */
+  margin-left: 19rem;
+  background-color: rgb(26, 2, 26);
+  padding: 10px;
+  opacity: 0.6;
+  color: rgb(240, 247, 240);
+  font-weight: bold;
+  border-radius: 15px;
   
 }
 
-form.search button[type="submit"] {
-  float: center;
-  margin-top: 10px;
-  min-width: 50px;
-}
+

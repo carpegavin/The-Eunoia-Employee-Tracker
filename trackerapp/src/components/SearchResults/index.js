@@ -7,7 +7,7 @@ function SearchResults(props) {
     <table class="table table-striped table-bordered" id="empTable">
       <thead>
         <tr>
-          <th>Image</th>
+          <th>Yearbook Photo</th>
           <th onclick="sortTable(0)">Name</th>
           <th onclick="sortTable(1)">Email</th>
           <th>Cell</th>

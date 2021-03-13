@@ -9,7 +9,7 @@ function EmployeeCard(props) {
       </div>
       <table class="container">
         <tr>
-          <th class="col-sm-4">
+          <th>
             <strong>Name:</strong> {props.name}
           </th>
           <th>
@@ -18,10 +18,8 @@ function EmployeeCard(props) {
           <th>
             <strong>Email:</strong> {props.email}
           </th>
-          
         </tr>
       </table>
-      
     </div>
   );
 }

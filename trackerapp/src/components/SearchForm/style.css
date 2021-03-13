@@ -4,10 +4,10 @@ form.search {
   width:400px !important;
   /* display: flex !important;
   align-content: center !important; */
-  margin-left: 19rem;
-  background-color: rgb(26, 2, 26);
+  margin-left: 12rem;
+  /* background-color: rgb(66, 3, 66); */
   padding: 10px;
-  opacity: 0.6;
+  opacity: 0.7;
   color: rgb(240, 247, 240);
   font-weight: bold;
   border-radius: 15px;

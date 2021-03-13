@@ -5,8 +5,9 @@ function SearchForm(props) {
   return (
     <form className="search">
       <div className="form-group">
-        <p>Click Name to sort alphabetically</p>
-        <label htmlFor="employee">Employee Search:</label>
+        <p>Click Name or Email to sort table alphabetically</p>
+        
+        <label htmlFor="employee">Search below by First Name or lower-case letter contained in name</label>
 
         <input
           value={props.search}

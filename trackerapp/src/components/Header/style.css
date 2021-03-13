@@ -1,10 +1,13 @@
 .jumbotron h1 {
     font-size: 3rem;
     text-align: center;
-    color: rgb(77, 59, 236);
+    color: rgb(236, 159, 59);
+    font-family: 'Franklin Gothic Medium' bold;
+    font-weight: bold;
+    
     
 }
 
 .jumbotron{
-    background-color:rgb(211, 94, 27) !important;
+    background-color:rgb(217, 238, 194) !important;
     }

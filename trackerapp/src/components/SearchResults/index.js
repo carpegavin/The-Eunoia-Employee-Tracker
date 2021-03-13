@@ -8,8 +8,8 @@ function SearchResults(props) {
       <thead>
         <tr>
           <th>Yearbook Photo</th>
-          <th onclick="sortTable(0)">Name</th>
-          <th onclick="sortTable(1)">Email</th>
+          <th>Name</th>
+          <th>Email</th>
           <th>Cell</th>
         </tr>
       </thead>

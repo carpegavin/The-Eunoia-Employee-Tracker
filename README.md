@@ -2,11 +2,11 @@
 
 ## `Description`
 
-* View your entire employee directory at once so that you have quick access to their information. Filter emplyees by name or role.
+* View your entire employee directory at once so that you have quick access to their information. Filter by name or sort alphabetically.
 
 <br>
 
-### Please enjoy the deployed application [HERE]()
+### Please enjoy the deployed application [HERE](https://the-eunoia-emp-dir.herokuapp.com/)
 <br>
 
 ### `MIT License`

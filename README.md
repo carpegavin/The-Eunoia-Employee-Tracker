@@ -6,7 +6,7 @@
 
 <br>
 
-### Please enjoy the deployed application [HERE]()
+### Please enjoy the deployed application [HERE](https://the-eunoia-emp-dir.herokuapp.com/)
 <br>
 
 ### `MIT License`

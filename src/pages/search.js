@@ -7,7 +7,7 @@ import Header from "../components/Header";
 
 <Header />;
 function Search() {
-  const [searchState, setSearchState] = useState({
+  const [searchState,] = useState({
     search: "",
     employees: [],
     results: [],

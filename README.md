@@ -14,7 +14,7 @@
 
 <br>
 
-![](insert gif here)
+![](https://github.com/carpegavin/The-Eunoia-Employee-Tracker/blob/main/public/gif/gif2.gif?raw=true)
 
 
 ### `Questions?`
